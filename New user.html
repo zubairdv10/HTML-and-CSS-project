@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-        </script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>New User</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="cards-container">
-        <!--this is the first prfile card-->
-        <div class="profile-card">
-            <div class="image-container">
-                <img src="IMG-55555557890.jpg." style="width:100%">
-                <div class="title">
-                    <h2>Sarah Lopez</h2>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New user</title>
+  </head>
+  <body>
+    <button class="myBtn_multi">Sign Up &#x1F4C4;</button>
+    <!-- The Modal -->
+    <div class="modal modal_multi">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close close_multi">×</span>
+        <form action="/action_page.php" style="border:1px solid #ccc">
+          <div class="container">
+            <label><b>First Name</b></label>
+            <input
+              type="text"
+              placeholder="Enter First Name"
+              name="FirstName"
+              required
+            />
+            <label><b>Last Name</b></label>
+            <input
+              type="text"
+              placeholder="Enter Last Name"
+              name="LastName"
+              required
+            />
+            <label><b>Occupation</b></label>
+            <input
+              type="text"
+              placeholder="Occupation"
+              name="Occupation"
+              required
+            />
+            <label><b>Location</b></label>
+            <input
+              type="text"
+              placeholder="Enter Location"
+              name="Location"
+              required
+            />
+            <label><b>Cellphone Number</b></label>
+            <input
+              type="text"
+              placeholder="Enter Cellphone Number"
+              name="Cellphone Number"
+              required
+            />
+            <label><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+            <input type="checkbox" checked="checked" /> Remember me
+            <p>
+              To create an account you have to agree our
+              <a href="#">Terms & Privacy</a>.
+            </p>
+
+            <div class="clearfix">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Sign Up</button>
             </div>
-            <div class= "main-container">
-                <p><i class="fa fa-envelope info"></i> SarahLopez77@gmail.com</p>
-                <p><i class="fa fa-phone info"></i> 081 932 8763 , 021 123 7634</p>
-                <hr>
-                <div class="container">
-                    <!-- Trigger the modal with a button -->
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">More Info</button>
-                  
-                    <!-- Modal -->
-                    <div class="modal fade" id="myModal" role="dialog">
-                      <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          </div>
-                          <div class="modal-body">
-                            <p>Home Address: 44 Drayton Road</p>
-                            <p>Next of kin:Natalie Lopez</p>
-                            <p>Next of kin relationship:Daughter</p>
-                            <p>Next of kin cellphone and email:072 331 4872, NatalieLopez89@yahoo.com</p>
-                            <button onclick="myFunction()"  class="btn btn-danger">Delete User.</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <script>function myFunction() {
-                    confirm("Delete this User?");
-                  }</script>
-</body>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
